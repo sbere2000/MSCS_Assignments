@@ -1,3 +1,4 @@
+# Bereket Gebremariam
 import time
 import sys
 import random
