@@ -1,3 +1,7 @@
+# Bereket Gebremariam
+# Optimization Technique and Implementation
+# Oct 25, 2025
+
 import numpy as np
 import timeit
 from collections import namedtuple
