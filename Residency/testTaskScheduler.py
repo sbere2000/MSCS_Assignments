@@ -3,7 +3,7 @@ Final Group Project - Test Class
 Bereket Gebremariam, Sachin Karki
 Satish Penmatsa
 2025 Fall - Algorithms and Data Structures (MSCS-532-M80) - Full Term
-University of the Cumberland – Kentucky
+University of the Cumberland Kentucky
 
 This is the test class which will be used to run the program.
 """
@@ -15,8 +15,6 @@ def demonstrate_task_scheduler():
 
     # Test Case 1: Add tasks
     print("Test Case 1: Adding tasks")
-    # Note: I'm converting the deadline to a string to match the original main.py implementation, 
-    # but the test file used a string, so I'll keep it as provided.
     scheduler.add_task(1, "Complete report", "2025-10-28", 2)
     scheduler.add_task(2, "Attend meeting", "2025-10-27", 1) # Highest priority (earliest date)
     scheduler.add_task(3, "Update database", "2025-10-28", 3) # Higher urgency than task 1 for date tie
