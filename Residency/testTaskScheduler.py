@@ -16,13 +16,13 @@ def demonstrate_task_scheduler():
     # Test Case 1: Add tasks
     print("Test Case 1: Adding tasks")
     scheduler.add_task(1, "Complete report", "2025-10-28", 2)
-    scheduler.add_task(2, "Attend meeting", "2025-10-27", 1) # Highest priority (earliest date)
-    scheduler.add_task(3, "Update database", "2025-10-28", 3) # Higher urgency than task 1 for date tie
+    scheduler.add_task(2, "Attend meeting", "2025-10-27", 1)  # earliest date -> highest priority
+    scheduler.add_task(3, "Update database", "2025-10-28", 3) # higher urgency wins tie on date
     print("Tasks added successfully")
 
     # Test Case 2: Retrieve highest-priority task
     print("\nTest Case 2: Retrieving highest-priority task")
-    task = scheduler.get_next_task() # Should be Task 2
+    task = scheduler.get_next_task()
     print(f"Highest-priority task: {task}")
 
     # Test Case 3: Find task by ID
@@ -39,7 +39,6 @@ def demonstrate_task_scheduler():
     while not scheduler.is_empty():
         task = scheduler.complete_task()
         print(f"Completed: {task}")
-        # Order should be: Task 2, Task 3, Task 1
 
     # Test Case 5: Edge case - Empty priority list
     print("\nTest Case 5: Empty priority list handling")
