@@ -3,7 +3,7 @@ Final Group Project - Test Class
 Bereket Gebremariam, Sachin Karki
 Satish Penmatsa
 2025 Fall - Algorithms and Data Structures (MSCS-532-M80) - Full Term
-University of the Cumberland – Kentucky
+University of the Cumberland Kentucky
 
 This is the test class which will be used to run the program.
 """
